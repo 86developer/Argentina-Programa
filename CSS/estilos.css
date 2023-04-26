@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Nunito:wght@900&display=swap');
+
+html {
+    font-size: 62.5%;   /*(10px=1rem)*/
+    box-sizing: border-box;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing:inherit;
+}
+
+/*Snippet Paul Irish (encuadra parametros globales 10px = 1 rem)*/
+
+
+body {
+  background-color: white;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.slide1 h5{
+  font-family: 'Montserrat';
+  color: white;
+  font-size: large;
+  font-weight: bolder;
+  text-shadow:black 0.1em 0.1em 0.2em;
+}
+.slide1 p{
+  font-family: 'Montserrat';
+  color: #F20317;
+  text-shadow:white 0.1em 0.1em 0.2em;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  
+}
+
+
+
+.slide2 h5{
+  font-family: 'Montserrat';
+  color: #F20317;
+  font-size: large;
+  font-weight: bolder;
+  word-spacing: 10px;
+  text-shadow: white 0.1em 0.1em 0.2em;
+}
+.slide2 p{
+  font-family: 'Montserrat';
+  color: black;
+  text-shadow:white 0.1em 0.1em 0.2em;
+  font-weight: bolder;
+}
+
+.container {
+  font-family: 'Montserrat';
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto 1fr;
+  grid-gap: 5px;
+  height: fit-content;
+  text-align: center;
+}
+
+.titulo {
+  font-family: 'Montserrat';
+  color: #F20317;
+  font-weight: bold;
+  font-size: x-large;
+  grid-column: 1 / 3;
+}
+
+.informacion {
+  padding: 20px;
+}
+
+.formulario {
+  padding: 20px;
+  height: fit-content;
+}
+
+.formulario h2 {
+  font-family: 'Montserrat';
+  padding: 10px;
+  font-size:160%;
+}
+
+.campo {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  display:flex;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #F20317;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.botonformulario {
+  display: flex;
+  font-family: 'Montserrat';
+  font-size: 120%;
+  flex-direction: row-reverse;   
+}
+
+.botonformulario1{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+button:hover {
+  background-color: black;
+}
+
+.container-fluid{
+  background-color: rgb(221, 221, 221);
+  padding-top: 100px;
+  padding-bottom: 5px;
+  width: 100%;
+  position:fixed;
+  z-index: 100;
+}
+
+#navbarNav{
+  font-family: 'Montserrat';
+  font-size: medium;
+  justify-content: right;
+  padding: 0%;
+}
+.nav-link{
+  text-align: center;
+  padding: 0%;
+}
+.nav-item {
+  font-size: smaller;
+  text-align: center;
+  padding-left: 20px;
+}
+.btn-light{
+  font-weight: 10px;
+  font-size: 105%;
+  background-color: (59, 59, 59);
+  color: white;
+  background-color: #F20317;
+  border-radius: 20px;
+  border-color: black;
+  border: 10px;
+}
+.btn-light:hover{
+  background-color: black;
+  border-color: white;
+  color: white;
+}
+
+.carousel-caption {
+  color: black;
+  font-family: 'Montserrat', sans-serif;;
+  font-size: medium;
+}
+
+.mapa {
+  overflow:hidden;
+  padding-bottom:400px;
+  position:relative;
+  height:0;
+}
+.mapa iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  padding-bottom: 15px;
+  position:absolute;
+}
+.carousel-item {
+  height: 450px;
+}
+
+.datos-de-contacto{
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size:120%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contenedorRRSS {
+  display:inline-flex;
+  flex-direction:row;
+  justify-content: center;
+  font-size: x-large;
+}
+.botonRRSS {
+  font-size: 120%;
+  padding-right: 10px;
+  padding-top: 10px;
+  color: black;
+  background-color: transparent;
+}
+.botonRRSS:hover {
+  background-color: black;
+  border-color: white;
+  color: white;
+}
+.Seguinos {
+  font-family: 'Montserrat';
+  padding-top: 20px;
+  padding-bottom: 0%;
+  font-weight: bolder;
+}
+.footer{
+  text-align: center;
+  background-color: rgb(221, 221, 221);
+  padding: 5px;
+}
+.institucional{
+  font-family: 'Montserrat';
+  background-color: rgb(221, 221, 221);
+  padding: 5px;
+  padding-bottom: 0%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.contenedornosotros{
+  background-color: rgb(221, 221, 221);
+  background-size: 100%;
+  padding: 50px;
+  display:inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.nosotros{
+  font-family: 'Montserrat';
+}
+.nosotros h1{
+  font-weight: bolder;
+  color: #F20317;
+}
+.mision{
+  padding-top: 3%;
+  font-family: 'Montserrat';
+}
+.mision h1{
+  font-weight: bolder;
+  color: #F20317;
+}
