@@ -274,3 +274,7 @@ button:hover {
   font-weight: bolder;
   color: #F20317;
 }
+.form-control {
+  line-height: 3rem;
+  font-size: medium;
+}
